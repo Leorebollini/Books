@@ -1,0 +1,248 @@
+/* Estilos para celulares en vertical */
+
+@media screen and (max-width: 980px) {
+  .header {
+    background-color: red;
+  }
+}
+
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.01fr 0.5fr 0.01fr;
+  gap: 1px 1px;
+  grid-template-areas: "." "." ".";
+}
+
+.header {
+  background-color: lightsteelblue;
+}
+
+.page{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+}
+
+/* .main {
+  background-color: lemonchiffon;
+} */
+
+.share {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+}
+
+.obligatorio{
+  color: red;
+  font-size: large;
+}
+
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+  font-size: large;
+}
+
+.formInput{
+  width: 55rem;
+  width: 2rem;
+  background-color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+.button{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 10rem;
+}
+
+.foot {
+  background-color: burlywood;
+  padding-left: 2rem;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para celulares en horizontal o tablets en vertical */
+
+@media screen and (min-width: 768px){
+
+  html, body, .grid-container { height: 100%; margin: 0; }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.01fr 0.5fr 0.01fr;
+    gap: 1px 1px;
+    grid-template-areas: "." "." ".";
+  }
+
+  .header {
+    background-color: lightsteelblue;
+  }
+
+  .page{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+  }
+
+  /* .main {
+    background-color: lemonchiffon;
+  } */
+
+  .share {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+  }
+
+  .obligatorio{
+    color: red;
+    font-size: large;
+  }
+
+  .form {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+    font-size: large;
+  }
+
+  .formInput{
+    width: 20rem;
+    background-color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+  }
+
+  .button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 10rem;
+  }
+  
+  .foot {
+    background-color: burlywood;
+    padding-left: 2rem;
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para escritorio o tablet en horizontal */
+
+@media ( min-width: 1200px){
+
+  html, body, .grid-container { height: 100%; margin: 0; }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+    gap: 1px 1px;
+    grid-template-areas: "." "." ".";
+  }
+
+  .header {
+    background-color: lightsteelblue;
+  }
+
+  .page{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+  }
+
+  /* .main {
+    background-color: lemonchiffon;
+  } */
+
+  .share {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+  }
+
+  .obligatorio{
+    color: red;
+    font-size: large;
+  }
+
+  .form {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+    font-size: large;
+  }
+
+  .formInput{
+    width: 20rem;
+    background-color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+  }
+
+  .button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 10rem;
+  }
+  
+  .foot {
+    background-color: burlywood;
+    padding-left: 2rem;
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
