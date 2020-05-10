@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 
-		<title>Libros</title>
+		<title>Books 4 All</title>
 	</head>
 	<body>
 		<div class="grid-container">
-				<div class="nav"></div>
-			  <div class="filtro"></div>
-	  			<div class="pie"></div>
+			<div class="barra">
+				<h2>Books 4 all</h2>
+			</div>
+		  	<div class="filtro">
+		  		<form>
+		  			<ul>
+		  			<li>
+		  				<label>Seleccione un filtro</label><br>
+			  			<select class="select-css" required>
+						  <option value="value1" selected>filtro 1</option> 
+						  <option value="value2">filtro 2</option>
+						  <option value="value3">filtro 3</option>
+						</select>
+					</li>
+					<li>
+						<label>Realiza una busqueda de libro</label><br>
+						<input type="text" class="busqueda" placeholder="Ej: Game of Thrones" />
+					</li>
+					<ul>
+					<input type="submit" class="buscar" value="Buscar">
+		  		</form>
+		  	</div>
+  			<div class="footer">
+  				<footer>
+  					<p>Contacto: <a href="mailto:books4all@books.com">books4all@books.com</a>.<br>
+  					Para saber mas nosotros: <a href="contacto.html">click aqui.</a></p>
+  				</footer>
+  			</div>
 		</div>
 	</body>
 </html>

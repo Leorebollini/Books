@@ -1,0 +1,104 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1.5fr 1.9fr 0.3fr;
+  gap: 1% 1%;
+  grid-template-areas: "nav nav nav nav" ". . . ." ". filtro filtro ." ". . . ." "pie pie pie pie";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  line-height: 250%;
+
+}
+.select-css{
+	display:block;
+	padding: 5px 10px;
+	height:42px;
+	margin:10px auto;
+	min-width: 225px;
+	height: 34px;
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;}
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.buscar{
+	padding: 8px;
+	color: #ffffff;
+    background-color: #B22222;
+    border-radius: 6px;
+    border: 2px solid #000000;
+}
+.buscar:hover{
+	color: #000000;
+	opacity: 0.9;
+}
+.busqueda{
+	padding: 5px;
+	border-radius: 5px;
+}
+.barra { grid-area: nav; }
+.filtro { 
+	grid-area: filtro;
+	text-align: center;
+	border: 3px groove black;
+	border-radius: 15px;
+	background-color: #DEB887; 
+}
+.footer { 
+	grid-area: pie; 
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+}
+
+/* Estilos para celulares en vertical */
+@media only screen
+ 	and (max-width: 736px)
+{
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-rows: 0.3fr 1fr 1.5fr 1.9fr 0.3fr;
+	  gap: 1% 1%;
+	  grid-template-areas: "nav" "." "filtro" "." "pie";
+	}
+}
+
+/* Estilo para tablets */
+ @media only screen
+ 	and (min-width: 736px)
+  	and (max-width: 1200px)
+{
+
+}
+
+/* Estilos para escritorio */
+@media only screen 
+	and (min-width: 1200px) 
+{ 
+	
+}
+
+.grid-container * { 
+ position: relative;
+}
+
+.grid-container *:after { 
+ position: absolute;
+ top: 0;
+ left: 0;
+}
