@@ -46,8 +46,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 }
 
 .formInput{
-  width: 55rem;
-  width: 2rem;
+  width: 80%;
   background-color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -93,7 +92,7 @@ a{
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.01fr 0.5fr 0.01fr;
+    grid-template-rows: 0.01fr 1fr 0.01fr;
     gap: 1px 1px;
     grid-template-areas: "." "." ".";
   }
@@ -105,6 +104,7 @@ a{
   .page{
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 2rem;
+    font-size: xxx-large;
   }
 
   /* .main {
@@ -114,25 +114,29 @@ a{
   .share {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 2rem;
+    font-size: xx-large;
   }
 
   .obligatorio{
     color: red;
-    font-size: large;
+    font-size: xx-large;
   }
 
   .form {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 2rem;
-    font-size: large;
+    font-size: xx-large;
   }
 
   .formInput{
-    width: 20rem;
+    width: 90%;
     background-color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 4px;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .button{
@@ -143,11 +147,11 @@ a{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: x-large;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    width: 10rem;
+    width: 17rem;
   }
   
   .foot {
@@ -157,10 +161,12 @@ a{
 
   p{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
   }
 
   a{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
   }
 }
 
@@ -197,6 +203,7 @@ a{
   .share {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 2rem;
+    font-size: initial;
   }
 
   .obligatorio{
@@ -216,6 +223,9 @@ a{
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 4px;
+    font-size: 1rem;
+    height: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .button{
@@ -240,9 +250,11 @@ a{
 
   p{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: initial;
   }
 
   a{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: initial;
   }
 }

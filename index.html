@@ -3,39 +3,58 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-
+		<link rel="icon" type="image/png"  href="img/favicon2.png"/>
 		<title>Books 4 All</title>
 	</head>
 	<body>
 		<div class="grid-container">
-			<div class="barra">
-				<h2>Books 4 all</h2>
+			<header class="Header">
+				<div class="titulo">
+					<h1>Books 4 all</h1>
+				</div>
+			</header>
+			<main class="Form">
+				<div class="filtro">
+					<h2>Filtrado:</h2>
+					<form>
+						<div>
+							<label for="filtro">Seleccione un filtro:</label><FONT class="obligatorio"> *</FONT><br>
+							<select class="caja" required>
+								<option value="" disabled selected>Seleccione un método de filtrado</option>
+								<option value="nombre">Nombre del libro</option> 
+								<option value="autor">Autor</option>
+								<option value="genero">Género</option>
+						  	</select>
+						</div>
+						<div>
+						  	<label for="busqueda">Realiza una busqueda de libro por nombre: </label><FONT class="obligatorio"> *</FONT><br>
+						  	<input type="text" class="busqueda" placeholder="Ej: El imperio final"/>
+						</div>
+						<!-- <div *ngIf="value === 'autor'">
+							<label for="busqueda">Realiza una busqueda de libro por autor: </label><br>
+							<input type="text" class="busqueda" placeholder="Ej: Brandon Sanderson"/>
+						</div>
+						<div *ngIf="value === 'genero'">
+							<label for="busqueda">Realiza una busqueda de libro por género: </label><br>
+							<input type="text" class="busqueda" placeholder="Ej: Fantasía"/>
+					  	</div> -->
+						<div>
+							<input type="submit" class="buscar" value="Buscar">
+						</div>
+					</form>
+				</div>
+			</main>
+			<div class="Resultados">
+				<div>
+					<h3>Resultados: </h3>
+				</div>
 			</div>
-		  	<div class="filtro">
-		  		<form>
-		  			<ul>
-		  			<li>
-		  				<label>Seleccione un filtro</label><br>
-			  			<select class="select-css" required>
-						  <option value="value1" selected>filtro 1</option> 
-						  <option value="value2">filtro 2</option>
-						  <option value="value3">filtro 3</option>
-						</select>
-					</li>
-					<li>
-						<label>Realiza una busqueda de libro</label><br>
-						<input type="text" class="busqueda" placeholder="Ej: Game of Thrones" />
-					</li>
-					<ul>
-					<input type="submit" class="buscar" value="Buscar">
-		  		</form>
-		  	</div>
-  			<div class="footer">
-  				<footer>
-  					<p>Contacto: <a href="mailto:books4all@books.com">books4all@books.com</a>.<br>
-  					Para saber mas nosotros: <a href="contacto.html">click aqui.</a></p>
-  				</footer>
-  			</div>
+			<footer class="Foot">
+                <div class="copyright">
+                    <p>Copyright © 2020 by Matias Lorenzo Rodriguiez y Leonel Rebollini.</p>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </footer>
 		</div>
 	</body>
 </html>
