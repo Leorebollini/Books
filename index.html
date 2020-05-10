@@ -17,7 +17,7 @@
 				<div class="filtro">
 					<h2>Filtrado:</h2>
 					<form>
-						<div>
+						<div class="formGroup">
 							<label for="filtro">Seleccione un filtro:</label><FONT class="obligatorio"> *</FONT><br>
 							<select class="caja" required>
 								<option value="" disabled selected>Seleccione un método de filtrado</option>
@@ -28,7 +28,7 @@
 						</div>
 						<div>
 						  	<label for="busqueda">Realiza una busqueda de libro por nombre: </label><FONT class="obligatorio"> *</FONT><br>
-						  	<input type="text" class="busqueda" placeholder="Ej: El imperio final"/>
+						  	<input type="text" class="formInput" placeholder="Ej: El imperio final" required/>
 						</div>
 						<!-- <div *ngIf="value === 'autor'">
 							<label for="busqueda">Realiza una busqueda de libro por autor: </label><br>
@@ -39,7 +39,7 @@
 							<input type="text" class="busqueda" placeholder="Ej: Fantasía"/>
 					  	</div> -->
 						<div>
-							<input type="submit" class="buscar" value="Buscar">
+							<button class="button">Buscar</button>
 						</div>
 					</form>
 				</div>
