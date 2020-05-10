@@ -1,43 +1,44 @@
+/* Estilos para celulares en vertical */
+
 html, body, .grid-container { height: 100%; margin: 0; }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
-  grid-template-rows: 5% 10% 43% 20% 10% 5%;
-  gap: 1% 1%;
-  grid-template-areas: "nav nav nav nav" "titulo . . ." "contact contact . local" "contact contact . ." ". . . ." "footer footer footer footer";
+	display: grid;
+	grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
+	grid-template-rows: 5% 10% 43% 20% 10% 5%;
+	gap: 1% 1%;
+	grid-template-areas: "nav nav nav nav" "titulo . . ." "contact contact . local" "contact contact . ." ". . . ." "footer footer footer footer";
 }
+
 body{
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 .header{
 	grid-area: nav; 
 	margin-left: 0.5%;
-
 }
+
 h2{
 	background-color: lightsteelblue;
 }
+
 .barra { 
 	grid-area: nav; 
-    
 }
 
 .titulo { 
-	grid-area: titulo; 
-
+	grid-area: titulo;
     padding-left: 5%;
 }
 
 .local { 
 	grid-area: local; 
 	margin: 5%;
-
 }
 
 .contact { 
 	grid-area: contact; 
-
     padding-left: 5%;
 }
 
@@ -47,14 +48,28 @@ h2{
 	margin-left: 0.5%;
 }
 
-
-
 .grid-container * { 
- position: relative;
+	position: relative;
 }
 
 .grid-container *:after { 
- position: absolute;
- top: 0;
- left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para celulares en horizontal o tablets en vertical */
+
+@media screen and (min-width: 768px){
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para escritorio o tablet en horizontal */
+
+@media ( min-width: 1200px){
+
 }

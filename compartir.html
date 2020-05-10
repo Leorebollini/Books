@@ -3,7 +3,8 @@
 	<head>
         <link rel="stylesheet" type="text/css" href="css/compartir.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Libros</title>
+        <link rel="icon" type="image/png"  href="img/favicon2.png"/>
+		<title>Books 4 All</title>
 	</head>
 	<body>
         <div class="grid-container">
@@ -25,23 +26,23 @@
                         <div class="formGroup">
                             <label for="libro">Nombre del libro:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="Nombre del libro">
+                            <input class="formInput" placeholder="Nombre del libro" required>
                         </div>
                         <div class="formGroup">
                             <label for="libro">Autor:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="Nombre del autor">
+                            <input class="formInput" placeholder="Nombre del autor" required>
                         </div>
                         <!-- El input se tiene que autocompleta (capaz hay que poner los datos del libro y se tiene que autocompletar) -->
                         <div class="formGroup">
                             <label for="emisor">Correo emisor:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="ejemplo@gmail.com">
+                            <input class="formInput" placeholder="ejemplo@gmail.com" required>
                         </div>
                         <div class="formGroup">
                             <label for="destinatario">Correo destinatario:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="ejemplo@gmail.com">
+                            <input class="formInput" placeholder="ejemplo@gmail.com" required>
                         </div>
                         <div class="formGroup">
                             <label for="comentarios">Comentarios:</label>
@@ -50,13 +51,13 @@
                         </div>
                     </form>
                     <button class="button">Enviar correo</button><br>
-                    <button class="button" style="background-color: firebrick;">Cancelar</button>
+                    <button class="button" style="background-color: firebrick;" onclick="location.href='index.html'">Cancelar</button>
                 </div>
             </main>
             <footer class="foot">
                 <div class="copyright">
                     <p>Copyright © 2020 by Matias Lorenzo Rodriguiez y Leonel Rebollini.</p>
-                    <a href="">Contacto</a>
+                    <a href="contacto.html">Contacto</a>
                 </div>
             </footer>
         </div>

@@ -1,74 +1,134 @@
+/* Estilos para celulares en vertical */
+
 html, body, .grid-container { height: 100%; margin: 0; }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1fr 1.5fr 1.9fr 0.3fr;
-  gap: 1% 1%;
-  grid-template-areas: "nav nav nav nav" ". . . ." ". filtro filtro ." ". . . ." "pie pie pie pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 2.5fr 0.2fr;
+  grid-template-areas: "Header" "Form" "Resultados" "Foot";
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  line-height: 250%;
+.Header { 
+	grid-area: Header;
+	background-color: lightsteelblue;
+}
 
+.titulo{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 2rem;
 }
-.select-css{
-	display:block;
-	padding: 5px 10px;
-	height:42px;
-	margin:10px auto;
-	min-width: 225px;
-	height: 34px;
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;}
+
+.Form { 
+	grid-area: Form;
+	background-color: lemonchiffon;
 }
-.select-css:hover {
-    border-color: #888;
+
+.caja {
+	margin: 20px auto 40px auto;	
+	border: 1px solid #d9d9d9;
+	height: 3rem;
+	overflow: hidden;
+	width: 16rem;
+	position:relative;
+	border-radius: 10px;
+	background-color: white;
 }
-.select-css:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222; 
-    outline: none;
+
+select {
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	height: 30px;
+	padding: 5px;
+	width: 250px;
 }
-.buscar{
-	padding: 8px;
-	color: #ffffff;
-    background-color: #B22222;
-    border-radius: 6px;
-    border: 2px solid #000000;
+
+select:focus{ 
+	outline: none;
 }
+ 
+.caja::after{
+	content:"\025be";
+	display:table-cell;
+	padding-top:7px;
+	text-align:center;
+	width:30px;
+	height:30px;
+	background-color:#d9d9d9;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+
+.filtro { 
+	text-align: center;
+}
+
 .buscar:hover{
 	color: #000000;
 	opacity: 0.9;
 }
+
 .busqueda{
 	padding: 5px;
 	border-radius: 5px;
 }
-.barra { grid-area: nav; }
-.filtro { 
-	grid-area: filtro;
-	text-align: center;
-	border: 3px groove black;
-	border-radius: 15px;
-	background-color: #DEB887; 
+
+h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
 }
-.footer { 
-	grid-area: pie; 
-	margin-right: 0.5%;
-	margin-left: 0.5%;
+
+.formInput{
+    width: 20rem;
+    background-color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+	height: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+}
+
+.obligatorio{
+    color: red;
+    font-size: large;
+}
+
+.button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 10rem;
+}
+
+.Resultados { 
+	grid-area: Resultados; 
+	background-color: ivory;
+}
+
+.Foot { 
+	grid-area: Foot; 
+	background-color: burlywood;
+	padding-left: 2rem;
 }
 
 /* Estilos para celulares en vertical */
-@media only screen
- 	and (max-width: 736px)
-{
+@media only screen and (max-width: 736px){
 	.grid-container {
 	  display: grid;
 	  grid-template-columns: 1fr;
@@ -77,22 +137,7 @@ ul {
 	  grid-template-areas: "nav" "." "filtro" "." "pie";
 	}
 }
-
-/* Estilo para tablets */
- @media only screen
- 	and (min-width: 736px)
-  	and (max-width: 1200px)
-{
-
-}
-
-/* Estilos para escritorio */
-@media only screen 
-	and (min-width: 1200px) 
-{ 
-	
-}
-
+/* 
 .grid-container * { 
  position: relative;
 }
@@ -101,4 +146,20 @@ ul {
  position: absolute;
  top: 0;
  left: 0;
+} */
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para celulares en horizontal o tablets en vertical */
+
+@media screen and (min-width: 768px){
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para escritorio o tablet en horizontal */
+
+@media ( min-width: 1200px){
+
 }
