@@ -29,7 +29,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 	border: 1px solid #d9d9d9;
 	height: 3rem;
 	overflow: hidden;
-	width: 16rem;
+	width: 70%;
 	position:relative;
 	border-radius: 10px;
 	background-color: white;
@@ -80,8 +80,16 @@ h2, h3 {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+p, a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.results{
+	padding-left: 2rem;
+}
+
 .formInput{
-    width: 20rem;
+    width: 70%;
     background-color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -127,33 +135,151 @@ label{
 	padding-left: 2rem;
 }
 
-/* Estilos para celulares en vertical */
-@media only screen and (max-width: 736px){
-	.grid-container {
-	  display: grid;
-	  grid-template-columns: 1fr;
-	  grid-template-rows: 0.3fr 1fr 1.5fr 1.9fr 0.3fr;
-	  gap: 1% 1%;
-	  grid-template-areas: "nav" "." "filtro" "." "pie";
-	}
-}
-/* 
-.grid-container * { 
- position: relative;
-}
-
-.grid-container *:after { 
- position: absolute;
- top: 0;
- left: 0;
-} */
-
 /* --------------------------------------------------------------------------------------------------------------------------- */
 
 /* Estilos para celulares en horizontal o tablets en vertical */
 
 @media screen and (min-width: 768px){
+	html, body, .grid-container { height: 100%; margin: 0; }
 
+	.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.3fr 1fr 2.5fr 0.2fr;
+	grid-template-areas: "Header" "Form" "Resultados" "Foot";
+	}
+
+	.Header { 
+		grid-area: Header;
+		background-color: lightsteelblue;
+	}
+
+	.titulo{
+		font-family: Arial, Helvetica, sans-serif;
+		padding-left: 2rem;
+		font-size: x-large;
+	}
+
+	.Form { 
+		grid-area: Form;
+		background-color: lemonchiffon;
+	}
+
+	.caja {
+		margin: 20px auto 40px auto;	
+		border: 1px solid #d9d9d9;
+		height: 3rem;
+		overflow: hidden;
+		width: 50%;
+		position:relative;
+		border-radius: 10px;
+		background-color: white;
+		font-size: 1.3rem;
+	}
+
+	select {
+		background: transparent;
+		border: none;
+		font-size: 14px;
+		height: 30px;
+		padding: 5px;
+		width: 250px;
+	}
+
+	select:focus{ 
+		outline: none;
+	}
+	
+	.caja::after{
+		content:"\025be";
+		display:table-cell;
+		padding-top:7px;
+		text-align:center;
+		width:30px;
+		height:30px;
+		background-color:#d9d9d9;
+		position:absolute;
+		top:0;
+		right:0px;	
+		pointer-events: none;
+	}
+
+	.filtro { 
+		text-align: center;
+	}
+
+	.buscar:hover{
+		color: #000000;
+		opacity: 0.9;
+	}
+
+	.busqueda{
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	h2, h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: xx-large;
+	}
+
+	p, a{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-large;
+	}
+
+	.results{
+		padding-left: 2rem;
+	}
+
+	.formInput{
+		width: 80%;
+		background-color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border-radius: 4px;
+		font-size: 1.3rem;
+		height: 2rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	label{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-large;
+	}
+
+	.obligatorio{
+		color: red;
+		font-size: x-large;
+	}
+
+	.button{
+		background-color: #4CAF50; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: 4rem;
+    	font-size: x-large;
+	}
+
+	.Resultados { 
+		grid-area: Resultados; 
+		background-color: ivory;
+	}
+
+	.Foot { 
+		grid-area: Foot; 
+		background-color: burlywood;
+		padding-left: 2rem;
+	}
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -161,5 +287,141 @@ label{
 /* Estilos para escritorio o tablet en horizontal */
 
 @media ( min-width: 1200px){
+	html, body, .grid-container { height: 100%; margin: 0; }
 
+	.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.3fr 1fr 2.5fr 0.2fr;
+	grid-template-areas: "Header" "Form" "Resultados" "Foot";
+	}
+
+	.Header { 
+		grid-area: Header;
+		background-color: lightsteelblue;
+	}
+
+	.titulo{
+		font-family: Arial, Helvetica, sans-serif;
+		padding-left: 2rem;
+	}
+
+	.Form { 
+		grid-area: Form;
+		background-color: lemonchiffon;
+	}
+
+	.caja {
+		margin: 20px auto 40px auto;	
+		border: 1px solid #d9d9d9;
+		height: 3rem;
+		overflow: hidden;
+		width: 20rem;
+		position:relative;
+		border-radius: 10px;
+		background-color: white;
+		font-size: medium;
+	}
+
+	select {
+		background: transparent;
+		border: none;
+		font-size: 14px;
+		height: 30px;
+		padding: 5px;
+		width: 250px;
+	}
+
+	select:focus{ 
+		outline: none;
+	}
+	
+	.caja::after{
+		content:"\025be";
+		display:table-cell;
+		padding-top:7px;
+		text-align:center;
+		width:30px;
+		height:30px;
+		background-color:#d9d9d9;
+		position:absolute;
+		top:0;
+		right:0px;	
+		pointer-events: none;
+	}
+
+	.filtro { 
+		text-align: center;
+	}
+
+	.buscar:hover{
+		color: #000000;
+		opacity: 0.9;
+	}
+
+	.busqueda{
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	h2, h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-large;
+	}
+
+	p, a{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: inherit;
+	}
+
+	.results{
+		padding-left: 2rem;
+	}
+
+	.formInput{
+		width: 20rem;
+		background-color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border-radius: 4px;
+		font-size: 1rem;
+		height: 1rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	label{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: inherit;
+	}
+
+	.obligatorio{
+		color: red;
+		font-size: inherit;
+	}
+
+	.button{
+		background-color: #4CAF50; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+	}
+
+	.Resultados { 
+		grid-area: Resultados; 
+		background-color: ivory;
+	}
+
+	.Foot { 
+		grid-area: Foot; 
+		background-color: burlywood;
+		padding-left: 2rem;
+	}
 }
