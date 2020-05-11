@@ -123,9 +123,16 @@ label{
     border-radius: 4px;
     width: 10rem;
 }
-
+.libreria{
+	display: flex;
+}
+.libro{
+	width: 200px;
+	padding: 20px;
+}
 .Resultados { 
 	grid-area: Resultados; 
+	display: block;
 	background-color: ivory;
 }
 

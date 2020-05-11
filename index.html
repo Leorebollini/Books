@@ -3,6 +3,8 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 		<link rel="icon" type="image/png"  href="img/favicon2.png"/>
 		<title>Books 4 All</title>
 	</head>
@@ -16,10 +18,10 @@
 			<main class="Form">
 				<div class="filtro">
 					<h2>Filtrado:</h2>
-					<form class="formGroup">
-						<div>
+					<form action="#" id="myform" method="POST" onsubmit="return false;">
+						<div class="formGroup">
 							<label for="filtro">Seleccione un filtro:</label><FONT class="obligatorio"> *</FONT><br>
-							<select class="caja" required>
+							<select class="caja" id="filtro" required>
 								<option value="" disabled selected>Seleccione un método de filtrado</option>
 								<option value="nombre">Nombre del libro</option> 
 								<option value="autor">Autor</option>
@@ -27,8 +29,8 @@
 						  	</select>
 						</div>
 						<div>
-						  	<label for="busqueda">Realiza una busqueda de libro por nombre: </label><FONT class="obligatorio"> *</FONT><br>
-						  	<input type="text" class="formInput" placeholder="Ej: El imperio final" required/>
+						  	<label for="book">Realiza una busqueda de libro por nombre: </label><FONT class="obligatorio"> *</FONT><br>
+						  	<input type="text" class="formInput" id="book" value="" placeholder="Ej: El imperio final" required/>
 						</div>
 						<!-- <div *ngIf="value === 'autor'">
 							<label for="busqueda">Realiza una busqueda de libro por autor: </label><br>
@@ -39,14 +41,15 @@
 							<input type="text" class="busqueda" placeholder="Ej: Fantasía"/>
 					  	</div> -->
 						<div>
-							<button class="button">Buscar</button>
+							<input type="submit" value="Buscar" class="button"></input>
 						</div>
 					</form>
 				</div>
 			</main>
 			<div class="Resultados">
-				<div class="results">
-					<h3>Resultados: </h3>
+				<h3>Resultados: </h3>
+				<div class="libreria" id="libreria">
+					
 				</div>
 				<div>
 					<!-- Acá irían los resultados -->
