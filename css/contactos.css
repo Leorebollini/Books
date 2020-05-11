@@ -1,61 +1,49 @@
 /* Estilos para celulares en vertical */
-
 html, body, .grid-container { height: 100%; margin: 0; }
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
-	grid-template-rows: 5% 10% 43% 20% 10% 5%;
-	gap: 1% 1%;
-	grid-template-areas: "nav nav nav nav" "titulo . . ." "contact contact . local" "contact contact . ." ". . . ." "footer footer footer footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.2fr 2.6fr 0.2fr;
+	gap: 1px 1px;
+	grid-template-areas: "header" "main" "foot";
 }
 
-body{
+.header { 
+	grid-area: header; 
+	background-color: lightsteelblue;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
-	grid-area: nav; 
-	margin-left: 0.5%;
+.top{
+	padding-left: 2rem;
+	display: inline-flex;
+	font-size: x-large;
 }
 
-h2{
-	background-color: lightsteelblue;
+.logo{
+	width: 3rem; 
+	padding-top: 2.1rem;
 }
 
-.barra { 
-	grid-area: nav; 
+.main { 
+	grid-area: main;
+	padding-left: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.titulo { 
-	grid-area: titulo;
-    padding-left: 5%;
+h5{
+	max-width: 37rem;
 }
 
-.local { 
-	grid-area: local; 
-	margin: 5%;
+.foot {
+	grid-area: foot;
+	background-color: burlywood;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact { 
-	grid-area: contact; 
-    padding-left: 5%;
-}
-
-.footer { 
-	grid-area: footer;  
-	margin-right: 0.5%;
-	margin-left: 0.5%;
-}
-
-.grid-container * { 
-	position: relative;
-}
-
-.grid-container *:after { 
-	position: absolute;
-	top: 0;
-	left: 0;
+.copyright{
+	padding-left: 2rem;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -63,7 +51,61 @@ h2{
 /* Estilos para celulares en horizontal o tablets en vertical */
 
 @media screen and (min-width: 768px){
+	html, body, .grid-container { height: 100%; margin: 0; }
 
+	.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.2fr 2.6fr 0.2fr;
+	gap: 1px 1px;
+	grid-template-areas: "header" "main" "foot";
+	}
+
+	.header { 
+		grid-area: header; 
+		background-color: lightsteelblue;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.top{
+		padding-left: 2rem;
+		display: inline-flex;
+		font-size: x-large;
+	}
+
+	.logo{
+		width: 5rem; 
+		padding-top: 1rem;
+	}
+
+	.main { 
+		grid-area: main;
+		padding-left: 2rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	h5{
+		max-width: 37rem;
+		font-size: inherit;
+	}
+	
+	h4{
+		font-size: x-large;
+	}
+
+	p, a{
+		font-size: large;
+	}
+
+	.foot {
+		grid-area: foot;
+		background-color: burlywood;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.copyright{
+		padding-left: 2rem;
+	}
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -71,5 +113,59 @@ h2{
 /* Estilos para escritorio o tablet en horizontal */
 
 @media ( min-width: 1200px){
+	html, body, .grid-container { height: 100%; margin: 0; }
 
+	.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.01fr 2.6fr 0.2fr;
+	gap: 1px 1px;
+	grid-template-areas: "header" "main" "foot";
+	}
+
+	.header { 
+		grid-area: header; 
+		background-color: lightsteelblue;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.top{
+		padding-left: 2rem;
+		display: inline-flex;
+		font-size: x-large;
+	}
+
+	.logo{
+		width: 5rem; 
+		padding-top: 1rem;
+	}
+
+	.main { 
+		grid-area: main;
+		padding-left: 2rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	h5{
+		max-width: 37rem;
+		font-size: small;
+	}
+
+	h4{
+		font-size: initial;
+	}
+
+	p, a{
+		font-size: large;
+	}
+
+	.foot {
+		grid-area: foot;
+		background-color: burlywood;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.copyright{
+		padding-left: 2rem;
+	}
 }
