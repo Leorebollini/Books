@@ -12,6 +12,9 @@
 		<div class="grid-container">
 			<header class="Header">
 				<div class="titulo">
+					<a href="index.html">
+						<img class="logo" src="img/favicon2.png">
+					</a>
 					<h1>Books 4 all</h1>
 				</div>
 			</header>
@@ -29,24 +32,16 @@
 						  	</select>
 						</div>
 						<div>
-						  	<label for="book">Realiza una busqueda de libro por nombre: </label><FONT class="obligatorio"> *</FONT><br>
-						  	<input type="text" class="formInput" id="book" value="" placeholder="Ej: El imperio final" required/>
+						  	<label for="book">Ingrese una palabra/frase: </label><FONT class="obligatorio"> *</FONT><br>
+						  	<input type="text" class="formInput" id="book" value="" placeholder="Ingrese un nombre/autor/género" required/>
 						</div>
-						<!-- <div *ngIf="value === 'autor'">
-							<label for="busqueda">Realiza una busqueda de libro por autor: </label><br>
-							<input type="text" class="busqueda" placeholder="Ej: Brandon Sanderson"/>
-						</div>
-						<div *ngIf="value === 'genero'">
-							<label for="busqueda">Realiza una busqueda de libro por género: </label><br>
-							<input type="text" class="busqueda" placeholder="Ej: Fantasía"/>
-					  	</div> -->
 						<div>
 							<input type="submit" value="Buscar" class="button"></input>
 						</div>
 					</form>
 				</div>
 			</main>
-			<div class="Resultados">
+			<div class="results">
 				<h3>Resultados: </h3>
 				<div class="libreria" id="libreria">
 					
