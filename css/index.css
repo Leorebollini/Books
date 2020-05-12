@@ -1,16 +1,23 @@
 /* Estilos para celulares en vertical */
 
-html, body, .grid-container { height: 100%; margin: 0; }
+html, body{ height: 100%; margin: 0; }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1fr 2.5fr 0.2fr;
-  grid-template-areas: "Header" "Form" "Resultados" "Foot";
+div{
+	display: flow-root;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: -webkit-fill-available;
+}
+
+#footer_push {
+	clear: both;
+	height: 50px;
 }
 
 .Header { 
-	grid-area: Header;
 	background-color: lightsteelblue;
 }
 
@@ -23,11 +30,6 @@ html, body, .grid-container { height: 100%; margin: 0; }
 .logo{
 	width: 3rem; 
 	padding-top: 1rem;
-}
-
-.Form { 
-	grid-area: Form;
-	background-color: lemonchiffon;
 }
 
 .caja {
@@ -70,6 +72,7 @@ select:focus{
 
 .filtro { 
 	text-align: center;
+	background-color: lemonchiffon;
 }
 
 .buscar:hover{
@@ -137,14 +140,12 @@ label{
 	padding: 20px;
 }
 .Resultados { 
-	grid-area: Resultados; 
 	display: block;
 	background-color: ivory;
 	padding-left: 2rem;
 }
 
 .Foot { 
-	grid-area: Foot; 
 	background-color: burlywood;
 	padding-left: 2rem;
 }
@@ -154,17 +155,19 @@ label{
 /* Estilos para celulares en horizontal o tablets en vertical */
 
 @media screen and (min-width: 768px){
-	html, body, .grid-container { height: 100%; margin: 0; }
+	html, body{ height: 100%; margin: 0; }
 
-	.grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.3fr 1fr 2.5fr 0.2fr;
-	grid-template-areas: "Header" "Form" "Resultados" "Foot";
+	div{
+		display: flow-root;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: -webkit-fill-available;
 	}
 
 	.Header { 
-		grid-area: Header;
 		background-color: lightsteelblue;
 	}
 
@@ -178,11 +181,6 @@ label{
 	.logo{
 		width: 5rem; 
 		padding-top: 1rem;
-	}
-
-	.Form { 
-		grid-area: Form;
-		background-color: lemonchiffon;
 	}
 
 	.caja {
@@ -226,6 +224,7 @@ label{
 
 	.filtro { 
 		text-align: center;
+		background-color: lemonchiffon;
 	}
 
 	.buscar:hover{
@@ -291,14 +290,12 @@ label{
 	}
 
 	.Resultados { 
-		grid-area: Resultados; 
 		background-color: ivory;
 		padding-left: 2rem;
 		display: block;
 	}
 
 	.Foot { 
-		grid-area: Foot; 
 		background-color: burlywood;
 		padding-left: 2rem;
 	}
@@ -309,17 +306,19 @@ label{
 /* Estilos para escritorio o tablet en horizontal */
 
 @media ( min-width: 1200px){
-	html, body, .grid-container { height: 100%; margin: 0; }
+	html, body{ height: 100%; margin: 0; }
 
-	.grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.3fr 1fr 2.5fr 0.2fr;
-	grid-template-areas: "Header" "Form" "Resultados" "Foot";
+	div{
+		display: flow-root;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: -webkit-fill-available;
 	}
 
 	.Header { 
-		grid-area: Header;
 		background-color: lightsteelblue;
 	}
 
@@ -334,10 +333,6 @@ label{
 		padding-top: 1rem;
 	}
 
-	.Form { 
-		grid-area: Form;
-		background-color: lemonchiffon;
-	}
 
 	.caja {
 		margin: 20px auto 40px auto;	
@@ -380,6 +375,7 @@ label{
 
 	.filtro { 
 		text-align: center;
+		background-color: lemonchiffon;
 	}
 
 	.buscar:hover{
@@ -440,14 +436,12 @@ label{
 	}
 
 	.Resultados { 
-		grid-area: Resultados; 
 		background-color: ivory;
 		padding-left: 2rem;
 		display: block;
 	}
 
 	.Foot { 
-		grid-area: Foot; 
 		background-color: burlywood;
 		padding-left: 2rem;
 	}

@@ -1,16 +1,17 @@
 /* Estilos para celulares en vertical */
-html, body, .grid-container { height: 100%; margin: 0; }
+html, body{ height: 100%; margin: 0; }
 
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.2fr 2.6fr 0.2fr;
-	gap: 1px 1px;
-	grid-template-areas: "header" "main" "foot";
+div{
+	display: flow-root;
+}
+
+footer {
+	position: initial;
+	bottom: 0;
+	width: -webkit-fill-available;
 }
 
 .header { 
-	grid-area: header; 
 	background-color: lightsteelblue;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,7 +28,6 @@ html, body, .grid-container { height: 100%; margin: 0; }
 }
 
 .main { 
-	grid-area: main;
 	padding-left: 2rem;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,7 +37,6 @@ h5{
 }
 
 .foot {
-	grid-area: foot;
 	background-color: burlywood;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -51,18 +50,19 @@ h5{
 /* Estilos para celulares en horizontal o tablets en vertical */
 
 @media screen and (min-width: 768px){
-	html, body, .grid-container { height: 100%; margin: 0; }
+	html, body{ height: 100%; margin: 0; }
 
-	.grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.2fr 2.6fr 0.2fr;
-	gap: 1px 1px;
-	grid-template-areas: "header" "main" "foot";
+	div{
+		display: flow-root;
+	}
+
+	footer {
+		position: initial;
+		bottom: 0;
+		width: -webkit-fill-available;
 	}
 
 	.header { 
-		grid-area: header; 
 		background-color: lightsteelblue;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -79,7 +79,6 @@ h5{
 	}
 
 	.main { 
-		grid-area: main;
 		padding-left: 2rem;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -98,7 +97,6 @@ h5{
 	}
 
 	.foot {
-		grid-area: foot;
 		background-color: burlywood;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -113,18 +111,19 @@ h5{
 /* Estilos para escritorio o tablet en horizontal */
 
 @media ( min-width: 1200px){
-	html, body, .grid-container { height: 100%; margin: 0; }
+	html, body { height: 100%; margin: 0; }
 
-	.grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.01fr 2.6fr 0.2fr;
-	gap: 1px 1px;
-	grid-template-areas: "header" "main" "foot";
+	div{
+		display: flow-root;
+	}
+
+	footer {
+		position: initial;
+		bottom: 0;
+		width: -webkit-fill-available;
 	}
 
 	.header { 
-		grid-area: header; 
 		background-color: lightsteelblue;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -141,7 +140,6 @@ h5{
 	}
 
 	.main { 
-		grid-area: main;
 		padding-left: 2rem;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -160,7 +158,6 @@ h5{
 	}
 
 	.foot {
-		grid-area: foot;
 		background-color: burlywood;
 		font-family: Arial, Helvetica, sans-serif;
 	}

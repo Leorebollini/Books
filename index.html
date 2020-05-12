@@ -8,54 +8,47 @@
 		<link rel="icon" type="image/png"  href="img/favicon2.png"/>
 		<title>Books 4 All</title>
 	</head>
-	<body>
-		<div class="grid-container">
-			<header class="Header">
-				<div class="titulo">
-					<a href="index.html">
-						<img class="logo" src="img/favicon2.png">
-					</a>
-					<h1>Books 4 all</h1>
-				</div>
-			</header>
-			<main class="Form">
-				<div class="filtro">
-					<h2>Filtrado:</h2>
-					<form action="#" id="myform" method="POST" onsubmit="return false;">
-						<div class="formGroup">
-							<label for="filtro">Seleccione un filtro:</label><FONT class="obligatorio"> *</FONT><br>
-							<select class="caja" id="filtro" required>
-								<option value="" disabled selected>Seleccione un método de filtrado</option>
-								<option value="intitle:">Nombre del libro</option> 
-								<option value="inauthor:">Autor</option>
-								<option value="inpublisher:">Editorial</option>
-						  	</select>
-						</div>
-						<div>
-						  	<label for="book">Ingrese una palabra/frase: </label><FONT class="obligatorio"> *</FONT><br>
-						  	<input type="text" class="formInput" id="book" value="" placeholder="Ingrese un nombre/autor/editorial" required/>
-						</div>
-						<div>
-							<input type="submit" value="Buscar" class="button"></input>
-						</div>
-					</form>
-				</div>
-			</main>
+	<body>	
+		<header class="Header">
+			<div class="titulo">
+				<a href="index.html">
+					<img class="logo" src="img/favicon2.png">
+				</a>
+				<h1>Books 4 all</h1>
+			</div>
+		</header>
+		<main class="Form">
+			<div class="filtro">
+				<h2>Filtrado:</h2>
+				<form action="#" id="myform" method="POST" onsubmit="return false;">
+					<div class="formGroup">
+						<label for="filtro">Seleccione un filtro:</label><FONT class="obligatorio"> *</FONT><br>
+						<select class="caja" id="filtro" required>
+							<option value="" disabled selected>Seleccione un método de filtrado</option>
+							<option value="intitle:">Nombre del libro</option> 
+							<option value="inauthor:">Autor</option>
+							<option value="inpublisher:">Editorial</option>
+					  	</select>
+					</div>
+					<div>
+					  	<label for="book">Ingrese una palabra/frase: </label><FONT class="obligatorio"> *</FONT><br>
+					  	<input type="text" class="formInput" id="book" value="" placeholder="Ingrese un nombre/autor/editorial" required/>
+					</div>
+					<div>
+						<input type="submit" value="Buscar" class="button"></input>
+					</div>
+				</form>
+			</div>
 			<div class="results">
 				<h3>Resultados: </h3>
-				<div class="libreria" id="libreria">
-					
-				</div>
-				<div>
-					<!-- Acá irían los resultados -->
-				</div>
+				<div class="libreria" id="libreria"></div>
 			</div>
-			<footer class="Foot">
-                <div class="copyright">
-                    <p>Copyright © 2020 by Matias Lorenzo Rodriguiez y Leonel Rebollini.</p>
-                    <a href="contacto.html">Contacto</a>
-                </div>
-            </footer>
-		</div>
+		</main>
 	</body>
+	<footer class="Foot" id="footer">
+		<div class="copyright">
+			<p>Copyright © 2020 by Matias Lorenzo Rodriguiez y Leonel Rebollini.</p>
+			<a href="contacto.html">Contacto</a>
+		</div>
+	</footer>
 </html>
