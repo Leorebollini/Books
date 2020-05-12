@@ -104,7 +104,6 @@ p, a{
 	height: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 label{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: large;
@@ -129,6 +128,7 @@ label{
     border-radius: 4px;
     width: 10rem;
 }
+
 .libreria{
 	display: flex;
 }
