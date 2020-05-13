@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-        <link rel="stylesheet" type="text/css" href="css/compartir.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/compartir.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript" src="js/compartir.js"></script>     
         <link rel="icon" type="image/png"  href="img/favicon2.png"/>
+
 		<title>Books 4 All</title>
+        
 	</head>
 	<body>
         <div class="grid-container">
@@ -24,35 +29,35 @@
                 </div>
                 <br>
                 <div class="form">
-                    <form>
+                    <form action="#" id="myform" method="POST" onsubmit="return false;">
                         <div class="formGroup">
                             <label for="libro">Nombre del libro:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="Ej: El imperio final" required>
+                            <input class="formInput" id="libro" placeholder="Ej: El imperio final" required>
                         </div>
                         <div class="formGroup">
                             <label for="libro">Autor:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="Ej: Brandon Sanderson" required>
+                            <input class="formInput" id="autor" placeholder="Ej: Brandon Sanderson" required>
                         </div>
                         <!-- El input se tiene que autocompleta (capaz hay que poner los datos del libro y se tiene que autocompletar) -->
                         <div class="formGroup">
                             <label for="emisor">Correo emisor:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="ejemplo@gmail.com" required>
+                            <input class="formInput" id="emisor" placeholder="ejemplo@gmail.com" required>
                         </div>
                         <div class="formGroup">
                             <label for="destinatario">Correo destinatario:</label><FONT class="obligatorio"> *</FONT>
                             <br>
-                            <input class="formInput" placeholder="ejemplo@gmail.com" required>
+                            <input class="formInput" id="destino" placeholder="ejemplo@gmail.com" required>
                         </div>
                         <div class="formGroup">
                             <label for="comentarios">Comentarios:</label>
                             <br>
-                            <textarea class="formInput" placeholder="(Opcional)" style="height: 8rem;"></textarea>
+                            <textarea class="formInput" id="mensaje" placeholder="(Opcional)" style="height: 8rem;"></textarea>
                         </div>
                     </form>
-                    <button class="button">Enviar correo</button><br>
+                    <input type="submit" value="Enviar correo" class="button"></input><br>
                     <button class="button" style="background-color: firebrick;" onclick="location.href='index.html'">Cancelar</button>
                 </div>
             </main>
