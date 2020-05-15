@@ -179,7 +179,7 @@ a{
 @media ( min-width: 1200px){
 
   footer {
-    position: absolute;
+    position: initial;
     bottom: 0;
     width: -webkit-fill-available;
   }
