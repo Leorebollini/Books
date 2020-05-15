@@ -1,0 +1,168 @@
+/* Estilos para celulares en vertical */
+html, body{ height: 100%; margin: 0; }
+
+div{
+	display: flow-root;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: -webkit-fill-available;
+}
+
+.header { 
+	background-color: lightsteelblue;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+	padding-left: 2rem;
+	display: inline-flex;
+	font-size: x-large;
+}
+
+.logo{
+	width: 3rem; 
+	padding-top: 2.1rem;
+}
+
+.main { 
+	padding-left: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h5{
+	max-width: 37rem;
+}
+
+.foot {
+	background-color: burlywood;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright{
+	padding-left: 2rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para celulares en horizontal o tablets en vertical */
+
+@media screen and (min-width: 768px){
+	html, body{ height: 100%; margin: 0; }
+
+	div{
+		display: flow-root;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: -webkit-fill-available;
+	}
+
+	.header { 
+		background-color: lightsteelblue;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.top{
+		padding-left: 2rem;
+		display: inline-flex;
+		font-size: x-large;
+	}
+
+	.logo{
+		width: 5rem; 
+		padding-top: 1rem;
+	}
+
+	.main { 
+		padding-left: 2rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	h5{
+		max-width: 37rem;
+		font-size: inherit;
+	}
+	
+	h4{
+		font-size: x-large;
+	}
+
+	p, a{
+		font-size: large;
+	}
+
+	.foot {
+		background-color: burlywood;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.copyright{
+		padding-left: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para escritorio o tablet en horizontal */
+
+@media ( min-width: 1200px){
+	html, body { height: 100%; margin: 0; }
+
+	div{
+		display: flow-root;
+	}
+
+	footer {
+        position: absolute;
+        bottom: 0;
+        width: -webkit-fill-available;
+    }
+
+	.header { 
+		background-color: lightsteelblue;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.top{
+		padding-left: 2rem;
+		display: inline-flex;
+		font-size: x-large;
+	}
+
+	.logo{
+		width: 5rem; 
+		padding-top: 1rem;
+	}
+
+	.main { 
+		padding-left: 2rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	h5{
+		max-width: 37rem;
+		font-size: small;
+	}
+
+	h4{
+		font-size: initial;
+	}
+
+	p, a{
+		font-size: large;
+	}
+
+	.foot {
+		background-color: burlywood;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.copyright{
+		padding-left: 2rem;
+	}
+}

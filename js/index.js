@@ -14,7 +14,8 @@ $(document).ready(function(){
                        	'<img src='+ elemento.volumeInfo.imageLinks.smallThumbnail +'></img><br>' +
                        	'Titulo: '+ elemento.volumeInfo.title +'<br> Autores: '+ elemento.volumeInfo.authors+'</strong>' + '<br> Año de lanzamiento: ' + elemento.volumeInfo.publishedDate +
 						'<br><a href='+elemento.volumeInfo.infoLink+' target=_blank><button class="button" style="background-color:#F24B41;">Comprar</button></a>'+
-						'<br><a href='+link+'><button class="button">Compartir</button></a>' +   
+						'<br><a href='+link+'><button class="button">Compartir</button></a>' + 
+						'<br><button class="button">Agregar a favoritos</button>' +  
                    '</div>' +
                 '<article>'
             	);

@@ -7,9 +7,9 @@ div{
 }
 
 footer {
-	position: absolute;
 	bottom: 0;
 	width: -webkit-fill-available;
+	display: inline-block;
 }
 
 #footer_push {
@@ -95,6 +95,7 @@ p, a{
 
 .results{
 	padding-left: 2rem;
+	min-height: 30.5rem;
 }
 
 .formInput{
@@ -107,6 +108,7 @@ p, a{
 	height: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 label{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: large;
@@ -135,10 +137,12 @@ label{
 .libreria{
 	display: flex;
 }
+
 .libro{
 	width: 200px;
 	padding: 20px;
 }
+
 .Resultados { 
 	display: block;
 	background-color: ivory;
@@ -162,9 +166,9 @@ label{
 	}
 
 	footer {
-		position: absolute;
 		bottom: 0;
 		width: -webkit-fill-available;
+		display: inline-block;
 	}
 
 	.Header { 
@@ -249,6 +253,7 @@ label{
 
 	.results{
 		padding-left: 2rem;
+		min-height: 30.5rem;
 	}
 
 	.formInput{
@@ -313,9 +318,9 @@ label{
 	}
 
 	footer {
-		position: absolute;
 		bottom: 0;
 		width: -webkit-fill-available;
+		display: inline-block;
 	}
 
 	.Header { 
@@ -333,6 +338,10 @@ label{
 		padding-top: 1rem;
 	}
 
+	.results{
+		padding-left: 2rem;
+		min-height: 30.5rem;
+	}
 
 	.caja {
 		margin: 20px auto 40px auto;	
