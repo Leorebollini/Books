@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-        <link rel="stylesheet" type="text/css" href="css/compartir.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/compartir.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/compartir.js"></script>     
         <link rel="icon" type="image/png"  href="img/favicon2.png"/>
+
 		<title>Books 4 All</title>
+
 	</head>
 	<body>
+<<<<<<< HEAD
         <header class="header">
             <div class="top">
                 <a href="index.html">
@@ -55,6 +60,70 @@
                 <button class="button" style="background-color: firebrick;" onclick="location.href='index.html'">Cancelar</button>
             </div>
         </main>
+=======
+        <div class="grid-container">
+            <header class="header">
+                <div class="top">
+                    <a href="index.html">
+						<img class="logo" src="img/favicon2.png">
+					</a>
+                    <h1 class="page">Books 4 All</h1>
+                </div>
+            </header>
+            <main class="main">
+                <div class="share">
+                    <h2>¡Compartí tu libro favorito con un amigo/a!</h2>
+                    <h3>Completa los siguientes campos:</h3>
+                    <label>Los campos marcados con: <FONT class="obligatorio">*</FONT> son obligatorios.</label>
+                </div>
+                <br>
+                <div class="form">
+                    <form action="#" id="form" method="POST" onsubmit="return false;">
+                        <div class="formGroup">
+                            <label for="libro">Nombre del libro:</label><FONT class="obligatorio"> *</FONT>
+                            <br>
+                            <input class="formInput" id="libro" placeholder="Ej: El imperio final" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="libro">Autor:</label><FONT class="obligatorio"> *</FONT>
+                            <br>
+                            <input class="formInput" id="autor" placeholder="Ej: Brandon Sanderson" required>
+                        </div>
+                        <!-- El input se tiene que autocompleta (capaz hay que poner los datos del libro y se tiene que autocompletar) -->
+                        <div class="formGroup">
+                            <label for="emisor">Correo emisor:</label><FONT class="obligatorio"> *</FONT>
+                            <br>
+                            <input class="formInput" id="emisor" placeholder="ejemplo@gmail.com" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="destinatario">Correo destinatario:</label><FONT class="obligatorio"> *</FONT>
+                            <br>
+                            <input class="formInput" id="destino" placeholder="ejemplo@gmail.com" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="asunto">Asunto:</label>
+                            <br>
+                            <input class="formInput" id="asunto" placeholder="Ej: Mensaje importante">
+                        </div>
+                        <div class="formGroup">
+                            <label for="comentarios">Comentarios:</label>
+                            <br>
+                            <textarea class="formInput" id="mensaje" placeholder="(Opcional)" style="height: 8rem;"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar correo" class="button"></input><br>
+                    </form>
+                    
+                    <button class="button" style="background-color: firebrick;" onclick="location.href='index.html'">Cancelar</button>
+                </div>
+            </main>
+            <footer class="foot">
+                <div class="copyright">
+                    <p>Copyright © 2020 by Matias Lorenzo Rodriguiez y Leonel Rebollini.</p>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </footer>
+        </div>
+>>>>>>> b4ae9d02d8e2defbd3bdfd7788f26e555de8b1b2
     </body>
     <footer class="foot">
         <div class="copyright">

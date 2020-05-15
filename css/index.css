@@ -134,10 +134,6 @@ label{
     width: 10rem;
 }
 
-.libreria{
-	display: flex;
-}
-
 .libro{
 	width: 200px;
 	padding: 20px;
@@ -298,6 +294,10 @@ label{
 		background-color: ivory;
 		padding-left: 2rem;
 		display: block;
+	}
+	.libreria{
+	display: flex;
+	flex-wrap: wrap;
 	}
 
 	.Foot { 
