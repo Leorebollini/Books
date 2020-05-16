@@ -21,6 +21,14 @@ footer {
 	background-color: lightsteelblue;
 }
 
+.fav{
+	margin-top: 0.6rem;
+	margin-right: 2px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
 .titulo{
 	font-family: Arial, Helvetica, sans-serif;
 	padding-left: 2rem;
@@ -169,6 +177,14 @@ label{
 
 	.Header { 
 		background-color: lightsteelblue;
+	}
+
+	.fav{
+		margin-top: 1.2rem;
+		margin-right: 2px;
+		position:absolute;
+		top:0;
+		right:0;
 	}
 
 	.titulo{
@@ -325,6 +341,14 @@ label{
 
 	.Header { 
 		background-color: lightsteelblue;
+	}
+
+	.fav{
+		margin-top: 1.7rem;
+		margin-right: 2px;
+		position:absolute;
+		top:0;
+		right:0;
 	}
 
 	.titulo{

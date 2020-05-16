@@ -32,6 +32,11 @@ footer {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+iframe{
+	max-width: 80%;
+    height: auto;
+}
+
 h5{
 	max-width: 37rem;
 }
@@ -81,6 +86,11 @@ h5{
 	.main { 
 		padding-left: 2rem;
 		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	iframe{
+		max-width: 80%;
+		height: 30rem;
 	}
 
 	h5{
@@ -142,6 +152,11 @@ h5{
 	.main { 
 		padding-left: 2rem;
 		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	iframe{
+		max-width: 80%;
+		height: 30rem;
 	}
 
 	h5{
