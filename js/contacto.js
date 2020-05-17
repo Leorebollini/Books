@@ -1,20 +1,8 @@
 'use strict'
 
 $(document).ready(function(){
-	if (!!navigator.geolocation) {
-		var output = document.querySelector("#local");
-
-			// Sirve para extraer la ubicación del usuario
-		/* 	function localizacion(posicion){
-		 		var latitud = posicion.coords.latitude;
-				var longitud =  posicion.coords.longitude;
-		 	}
-		 	function error(){
-		 		output.innerHTML ="<p> No se pudo obtener la ubicación</p>";
-		 	}
-		  	navigator.geolocation.getCurrentPosition(localizacion,error);*/
-
-	}else {
-	  document.getElementById("local").innerHTML = "Lo sentimos, tu navegador no soporta la geolocation.";
-	}
+	var map = L.map('map').setView([-34.92301785482791, -57.95648057603086],18);
+	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+	maxZoom: 18}).addTo(map);	
 });
