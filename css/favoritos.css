@@ -6,7 +6,7 @@ div{
 }
 
 footer {
-	position: absolute;
+	position: initial;
 	bottom: 0;
 	width: -webkit-fill-available;
 }
@@ -32,8 +32,52 @@ footer {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.libreria{
+	min-height: 46.5rem;
+}
+
+.button{
+	background-color: goldenrod;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 10rem;
+	height: inherit;
+}
+
+.favbtn{
+	background-color: crimson; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 10rem;
+	height: inherit;
+}
+
 h5{
 	max-width: 37rem;
+}
+
+h4{
+	font-size: x-large;
+}
+
+p, a{
+	font-size: large;
 }
 
 .foot {
@@ -83,6 +127,42 @@ h5{
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
+	.libreria{
+		min-height: 46.5rem;
+	}
+
+	.button{
+		background-color: goldenrod;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: inherit;
+	}
+
+	.favbtn{
+		background-color: crimson; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: inherit;
+	}
+
 	h5{
 		max-width: 37rem;
 		font-size: inherit;
@@ -118,7 +198,7 @@ h5{
 	}
 
 	footer {
-        position: absolute;
+		position: initial;
         bottom: 0;
         width: -webkit-fill-available;
     }
@@ -142,6 +222,42 @@ h5{
 	.main { 
 		padding-left: 2rem;
 		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.libreria{
+		min-height: 45.6rem;
+	}
+
+	.button{
+		background-color: goldenrod;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: inherit;
+	}
+
+	.favbtn{
+		background-color: crimson; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: inherit;
 	}
 
 	h5{
