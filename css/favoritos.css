@@ -101,7 +101,7 @@ p, a{
 	}
 
 	footer {
-		position: absolute;
+		position: initial;
 		bottom: 0;
 		width: -webkit-fill-available;
 	}
@@ -190,7 +190,7 @@ p, a{
 
 /* Estilos para escritorio o tablet en horizontal */
 
-@media ( min-width: 1200px){
+@media ( min-width: 1024px){
 	html, body { height: 100%; margin: 0; }
 
 	div{
