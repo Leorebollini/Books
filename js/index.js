@@ -1,13 +1,14 @@
 'use strict'
-var cont = 0;
+var maxresult = 10;
+var cont = localStorage.length;	
+
 function favoritos(elemento){
-	cont += 1;
 	console.log(elemento);
 	$.get("https://www.googleapis.com/books/v1/volumes?q=ISBN:"+elemento, function(response){
 		console.log(response.items[0]);
 		localStorage.setItem(cont, JSON.stringify(response.items[0]));
-		localStorage.setItem("cont", cont);
 	});
+	cont += 1;
 }
 
 $(document).ready(function(){
@@ -16,7 +17,8 @@ $(document).ready(function(){
 		var search = $("#book").val();
 		var resultado = $("#libreria");
 		var link = "compartir.html";
-		$.get("https://www.googleapis.com/books/v1/volumes?q="+filtro+ search, function(response){
+
+		$.get("https://www.googleapis.com/books/v1/volumes?maxResults="+maxresult+"&q="+filtro+ search, function(response){
 			$.each(response.items, function(index, elemento){	
 				console.log(elemento);
             	resultado.append(      	
@@ -31,6 +33,12 @@ $(document).ready(function(){
                 '<article>'
             	);
             });
+          /*   Boton ver mas - falta implementación
+            if(response.items.length == 10){
+            	resultado.append(
+            		'<button onclick="vertodos();">Ver más</button>'
+            	);
+            }*/
 		});
 	});
 });

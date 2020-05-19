@@ -1,9 +1,10 @@
 'use strict'
+
 $(document).ready(function(){
 	var libros = [];
-	var cont = localStorage.getItem('cont');	
+	var cont = localStorage.length;	
 	while(cont != 0){
-		if(JSON.parse(localStorage.getItem(cont)) !== null){
+		if(JSON.parse(localStorage.length) !== null){
 			libros.push(JSON.parse(localStorage.getItem(cont)));
 		}
 		cont -= 1;
@@ -29,7 +30,7 @@ $(document).ready(function(){
 
 function eliminarFavs(id){
 	var libro;
-	var cont = localStorage.getItem('cont');
+	var cont = localStorage.length;
 	while(cont != 0){
 		libro = JSON.parse(localStorage.getItem(cont));
 		console.log(libro)
