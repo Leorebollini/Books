@@ -38,15 +38,13 @@ function eliminarFavs(id){
 		if (id == elemento.id){
 			if(index == 1 || index == 0){
 				libro[0].splice(index, 1);
-				localStorage.setItem("favoritos", JSON.stringify(libro[0]));
-				alert("Se ha quitado de favoritos.");
-				return false;
 			}else{
 				libro[0].splice(index, index-1);
-				localStorage.setItem("favoritos", JSON.stringify(libro[0]));
-				alert("Se ha quitado de favoritos.");
-				return false;
+				console.log(libro);
 			}
+			localStorage.setItem("favoritos", JSON.stringify(libro[0]));
+			alert("Se ha quitado de favoritos.");
+			return false;
 		}
 	});
 	window.location.reload(true);
