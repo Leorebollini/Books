@@ -1,18 +1,17 @@
 'use strict'
 
 $(document).ready(function(){
+
+	// Recuperar libros
+
 	var libros = [];
-	var cont = localStorage.length;	
-	while(cont != 0){
-		if(JSON.parse(localStorage.length) !== null){
-			libros.push(JSON.parse(localStorage.getItem(cont)));
-		}
-		cont -= 1;
-	}
-	console.log(libros);
+	libros.push(JSON.parse(localStorage.getItem("favoritos")));
+	
+
+	// Imprimir libros
+
 	var resultado = $("#libreria");
-	$.each(libros, function(index, elemento){
-		console.log(elemento);
+	$.each(libros[0], function(index, elemento){
 		if(elemento !== null){
 			resultado.append(      	
 				'<article class="libro" >' +
@@ -28,18 +27,27 @@ $(document).ready(function(){
     });
 });
 
+
+// Quitar de favoritos
+
 function eliminarFavs(id){
-	var libro;
-	var cont = localStorage.length;
-	while(cont != 0){
-		libro = JSON.parse(localStorage.getItem(cont));
-		console.log(libro)
-		if(libro !== null){
-			if(libro.id === id){
-				localStorage.removeItem(cont)
+	let libro = [];
+	libro.push(JSON.parse(localStorage.getItem("favoritos")));
+	var cond = true;
+	$.each(libro[0], function(index, elemento){
+		if (id == elemento.id){
+			if(index == 1 || index == 0){
+				libro[0].splice(index, 1);
+				localStorage.setItem("favoritos", JSON.stringify(libro[0]));
+				alert("Se ha quitado de favoritos.");
+				return false;
+			}else{
+				libro[0].splice(index, index-1);
+				localStorage.setItem("favoritos", JSON.stringify(libro[0]));
+				alert("Se ha quitado de favoritos.");
+				return false;
 			}
 		}
-		cont -= 1;
-	}
+	});
 	window.location.reload(true);
 }

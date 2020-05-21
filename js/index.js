@@ -1,14 +1,30 @@
 'use strict'
 var maxresult = 10;
-var cont = localStorage.length;	
+var favorito = [];
 
 function favoritos(elemento){
-	console.log(elemento);
+	var cond = true;
+	var libros = JSON.parse(localStorage.getItem("favoritos"));
+	if(libros !== null){
+		favorito = libros.slice();
+	}
 	$.get("https://www.googleapis.com/books/v1/volumes?q=ISBN:"+elemento, function(response){
-		console.log(response.items[0]);
-		localStorage.setItem(cont, JSON.stringify(response.items[0]));
+		$.each(favorito, function(index, elemento){	
+			console.log(elemento);
+			if(elemento != null){
+				if (response.items[0].id == elemento.id){
+					console.log(elemento[index]);
+					cond = false;
+					alert("No se pudo agregar a favoritos. Puede ser que ya este agregado en favoritos.");
+				}
+			}
+		});
+		if(cond == true){
+			favorito.push(response.items[0]);
+			localStorage.setItem("favoritos",JSON.stringify(favorito));
+			alert("se ha agregado a favoritos");
+		}
 	});
-	cont += 1;
 }
 
 $(document).ready(function(){
@@ -20,7 +36,6 @@ $(document).ready(function(){
 
 		$.get("https://www.googleapis.com/books/v1/volumes?maxResults="+maxresult+"&q="+filtro+ search, function(response){
 			$.each(response.items, function(index, elemento){	
-				console.log(elemento);
             	resultado.append(      	
                 '<article class="libro" >' +
                    '<div>' +  
