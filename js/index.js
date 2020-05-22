@@ -76,7 +76,7 @@ $(document).ready(function(){
        //      Boton ver todos
             if(response.items.length > 10){
             	resultado.append(
-            		'<button id="vertodos" onclick="vertodos();">Ver más</button>'
+            		'<button class="seemore" id="vertodos" onclick="vertodos();">Ver más</button>'
             	);
             }
 		});

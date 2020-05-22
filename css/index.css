@@ -142,6 +142,23 @@ label{
     width: 10rem;
 }
 
+.seemore{
+	background-color: gold; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 10rem;
+	height: 4rem;
+	font-size: large;
+}
+
 .favbtn{
 	background-color: goldenrod; 
     border: none;
@@ -320,6 +337,23 @@ label{
     	font-size: large;
 	}
 
+	.seemore{
+		background-color: gold; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: 4rem;
+		font-size: large;
+	}
+
 	.favbtn{
 		background-color: goldenrod; 
 		border: none;
@@ -496,6 +530,22 @@ label{
 		border-radius: 4px;
 		width: 10rem;
 		height: inherit;
+	}
+
+	.seemore{
+		background-color: gold; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 4px;
+		width: 10rem;
+		height: 5rem;
 	}
 
 	.favbtn{
